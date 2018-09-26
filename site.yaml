@@ -1,0 +1,22 @@
+--- 
+- hosts: localhost
+  vars:
+    # open_in_new_tab: True
+    github_banner: True
+    # site_title: "Really Cool App Menu Thing"
+    apps:
+      - title: "App Number 1"
+        link: "#"
+        # img: "link/path/to/image.png"
+      - title: "App Number 2"
+        link: "#"
+      - title: "App Number 3"
+        link: "#"
+      - title: "App Number 4"
+        link: "#"
+  tasks:
+  - name: Generate Static HTML Template
+    template:
+      src: index.html.j2
+      dest: rendered.html
+
