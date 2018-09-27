@@ -1,19 +1,24 @@
 --- 
 - hosts: localhost
-  vars:
-    # open_in_new_tab: True
-    github_banner: True
-    # site_title: "Really Cool App Menu Thing"
-    apps:
-      - title: "App Number 1"
-        link: "#"
-        # img: "link/path/to/image.png"
-      - title: "App Number 2"
-        link: "#"
-      - title: "App Number 3"
-        link: "#"
-      - title: "App Number 4"
-        link: "#"
+ # vars:
+ #    # whether to include target='_blank'
+ #    open_in_new_tab: True
+ #    # whether to include the fork banner
+ #    github_banner: True
+ #    # Define a page title or use the default "App Menu"
+ #    site_title: "Really Cool App Menu Thing"
+ #    apps:
+ #      - title: "App Number 1"
+ #        link: "#"
+ #        # an optional img link, you'll need to push images into place
+ #        # at this path on your webserver
+ #        # img: "link/path/to/image.png"
+ #      - title: "App Number 2"
+ #        link: "#"
+ #      - title: "App Number 3"
+ #        link: "#"
+ #      - title: "App Number 4"
+ #        link: "#"
   tasks:
   - name: Generate Static HTML Template
     template:
