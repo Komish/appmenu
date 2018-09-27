@@ -23,5 +23,5 @@
   - name: Generate Static HTML Template
     template:
       src: index.html.j2
-      dest: rendered.html
+      dest: "{{ lookup('env', 'PWD') }}/rendered.html"
 
